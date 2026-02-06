@@ -1,0 +1,53 @@
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+# React State & Logic Calculator
+A focused React application designed to demonstrate proficiency in state management, controlled components, and mathematical logic within a functional component architecture.
+## 🚀 Features
+Controlled Inputs: Real-time synchronization between the UI and React state using onChange handlers.
+Mathematical Logic: Dynamic calculation of sums with proper string-to-number parsing.
+State Reset: A dedicated "Clear" function to flush all input and result states back to their initial values.
+Validation: Basic handling for number-only inputs using HTML5 input types.
+## 🛠️ Tech Stack
+Library: React.dev (Functional Components)
+State Management: useState Hook
+Version Control: GitHub
+📋 Implementation Details
+The project follows a 5-step development process:
+Input Handling: Setup of Calculator.jsx with two numerical input fields.
+Controlled Components: Leveraging the value attribute and useState to ensure the "Source of Truth" remains within React.
+Operation Logic: Implementation of a calculateSum function that uses parseFloat or Number() to ensure mathematical accuracy.
+Reset Feature: A handler that resets num1, num2, and result states simultaneously.
+Deployment: Version controlled via Git and hosted on GitHub.
+## 🖥️ Getting Started
+Clone the repository:
+bash
+git clone https://github.com
+Use code with caution.
+
+Install dependencies:
+bash
+npm install
+Use code with caution.
+
+Run the application:
+bash
+npm run dev
+Use code with caution.
+
+## ✍️ Author
+Created by: **Quanda Grant**
+Demonstrating core React competencies in state handling and UI logic.
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
